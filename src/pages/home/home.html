@@ -1,14 +1,15 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Traust
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-tabs>
+    <ion-tab [root]="profileRoot" tabTitle="Profile" tabIcon="person"></ion-tab>
+    <ion-tab [root]="activityRoot" tabTitle="Activity" tabIcon="car"></ion-tab>
+    <ion-tab [root]="walletRoot" tabTitle="Wallet" tabIcon="card"></ion-tab>
+  </ion-tabs>
 </ion-content>
