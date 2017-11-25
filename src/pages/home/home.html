@@ -4,6 +4,20 @@
       Traust
     </ion-title>
   </ion-navbar>
+
+  <ion-card>
+
+    <ion-card-header>
+      <ion-avatar>
+        <img class="circle-pic" src="../img/girl.jpeg">
+      </ion-avatar>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Name : {{users[1].name}}</p>
+      <p> Distance : {{users[1].distance}} km </p>
+    </ion-card-content>
+
+  </ion-card>
 </ion-header>
 
 <ion-content padding>
@@ -12,4 +26,6 @@
     <ion-tab [root]="activityRoot" tabTitle="Activity" tabIcon="car"></ion-tab>
     <ion-tab [root]="walletRoot" tabTitle="Wallet" tabIcon="card"></ion-tab>
   </ion-tabs>
+
+
 </ion-content>

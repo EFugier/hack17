@@ -3,6 +3,8 @@ import { NavController } from 'ionic-angular';
 import { ActivityPage } from "../activity/activity";
 import { WalletPage } from "../wallet/wallet";
 import { ProfilePage } from "../profile/profile";
+import { USERS } from "../../mock-data/mock-users";
+import { User } from "../../model/user";
 
 @Component({
   selector: 'page-home',
@@ -15,8 +17,9 @@ export class HomePage {
   walletRoot = WalletPage;
   profileRoot = ProfilePage;
 
-  constructor(public navCtrl: NavController) {
+  users = USERS;
 
+  constructor(public navCtrl: NavController) {
   }
 
 }
