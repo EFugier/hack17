@@ -1,10 +1,10 @@
-import Drive from ./drive.ts
-import Wallet from ./wallet.ts
+import { Drive } from './drive';
+import { Wallet } from './wallet';
 
-export interface user{
-	name : string;
-	picutre : string;
-	distance : integer;	
-	wallet : Wallet;
-	drives : Drive[];
+export interface User {
+  name: string;
+  picture: string;
+  distance: number;
+  wallet: Wallet;
+  drives: Drive[];
 }
