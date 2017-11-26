@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import {DRIVES} from '../../mock-data/mock-activities';
 /**
  * Generated class for the ActivityPage page.
  *
@@ -13,13 +13,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-activity',
   templateUrl: 'activity.html',
 })
+
 export class ActivityPage {
 
+  drives = DRIVES;
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ActivityPage');
-  }
-
 }
