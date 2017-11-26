@@ -5,22 +5,36 @@
     </ion-title>
   </ion-navbar>
 
+  <!-- <ion-card>
+
+     <ion-card-header>
+       <ion-avatar>
+         <img class="circle-pic" src="../img/girl.jpeg">
+       </ion-avatar>
+     </ion-card-header>
+     <ion-card-content>
+       <p>Name : {{users[1].name}}</p>
+       <p> Distance : {{users[1].distance}} km </p>
+     </ion-card-content>
+
+   </ion-card> -->
   <ion-card>
-
-    <ion-card-header>
-      <ion-avatar>
-        <img class="circle-pic" src="../img/girl.jpeg">
-      </ion-avatar>
-    </ion-card-header>
-    <ion-card-content>
-      <p>Name : {{users[1].name}}</p>
-      <p> Distance : {{users[1].distance}} km </p>
-    </ion-card-content>
-
+    <ion-avatar>
+      <img class="circle-pic" src="../img/girl.jpeg">
+    </ion-avatar>
+    <p>
+      <ion-icon name="contact"></ion-icon>
+      {{users[1].name}}
+    </p>
+    <p>
+      <ion-icon name="navigate"></ion-icon>
+      {{users[1].distance}} km
+    </p>
   </ion-card>
 </ion-header>
 
 <ion-content padding>
+
   <ion-tabs>
     <ion-tab [root]="profileRoot" tabTitle="Profile" tabIcon="person"></ion-tab>
     <ion-tab [root]="activityRoot" tabTitle="Activity" tabIcon="car"></ion-tab>
