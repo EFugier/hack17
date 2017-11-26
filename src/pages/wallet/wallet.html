@@ -7,7 +7,7 @@
 
 
 <ion-content padding>
-   <ion-card>
+  <ion-card>
     <ion-card-header>
       <ion-icon name="call"></ion-icon> <strong><u>Useful Numbers</u></strong>
     </ion-card-header>
@@ -20,7 +20,7 @@
       </ul>
     </ion-card-content>
   </ion-card>
-  
+
   <ion-card>
     <ion-card-header>
       <ion-icon name="paper"></ion-icon> <strong><u>Driver License</u></strong>
@@ -29,20 +29,20 @@
       <ul>
         <li><strong>ID:</strong> {{users[1].license.id}}</li>
         <li><strong>Delivery date:</strong> {{users[1].license.deliveryDate}}</li>
-    </ul>
+      </ul>
     </ion-card-content>
     <img src={{users[1].license.qrPath}} />
   </ion-card>
-  
+
   <ion-card>
     <ion-card-header>
       <ion-icon name="paper"></ion-icon> <strong><u>Insurance</u></strong>
     </ion-card-header>
     <ion-card-content>
       <ul>
-      <li><strong>From:</strong> {{users[1].insurance.fromDate}}</li>
-      <li><strong>To:</strong> {{users[1].insurance.toDate}}</li>
-      <li><strong>ID:</strong> {{users[1].insurance.id}}</li>
+        <li><strong>From:</strong> {{users[1].insurance.fromDate}}</li>
+        <li><strong>To:</strong> {{users[1].insurance.toDate}}</li>
+        <li><strong>ID:</strong> {{users[1].insurance.id}}</li>
       </ul>
     </ion-card-content>
     <img src={{users[1].insurance.qrPath}} />
