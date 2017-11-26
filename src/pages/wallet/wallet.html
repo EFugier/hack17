@@ -7,5 +7,44 @@
 
 
 <ion-content padding>
-
+   <ion-card>
+    <ion-card-header>
+      <strong>Useful Numbers</strong>
+    </ion-card-header>
+    <ion-card-content>
+      <ul>
+        <li><strong>Emergency (EU):</strong> 112 </li>
+        <li>SAMU: 15</li>
+        <li>Police: 17</li>
+        <li>Firemen: 18</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card>
+    <ion-card-header>
+      <strong>Driver License</strong>
+    </ion-card-header>
+    <ion-card-content>
+      <ul>
+        <li><strong>ID:</strong> {{users[1].license.id}}</li>
+        <li><strong>Delivery date:</strong> {{users[1].license.deliveryDate}}</li>
+    </ul>
+    </ion-card-content>
+    <img src={{users[1].license.qrPath}} />
+  </ion-card>
+  
+  <ion-card>
+    <ion-card-header>
+      <strong>Insurance</strong>
+    </ion-card-header>
+    <ion-card-content>
+      <ul>
+      <li><strong>From:</strong> {{users[1].insurance.fromDate}}</li>
+      <li><strong>To:</strong> {{users[1].insurance.toDate}}</li>
+      <li><strong>ID:</strong> {{users[1].insurance.id}}</li>
+      </ul>
+    </ion-card-content>
+    <img src={{users[1].insurance.qrPath}} />
+  </ion-card>
 </ion-content>
