@@ -23,7 +23,7 @@ export const USERS: User[] = [
     license: {
       id: "A1FRA13AA000026181231BOB<<9",
       deliveryDate: "01/01/2000",
-      qrPath: "../img/qr-code-1.jpg"},
+      qrPath: "../img/qr-code-1.png"},
     
     insurance: {
       id: "0806600",

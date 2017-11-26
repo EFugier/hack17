@@ -34,13 +34,38 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
+  head:       #FFFFFF,
+  primary:    #FF4900,
+  secondary:  #FF5A19,
+  terciary:   #FFB79A,
+  bg:         #FFFBFA,
   danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
+  light:      #000,
+  dark:       #222,
+    // very light orange
 );
 
+$tabs-background: #FFB79A;
+$background-color: color($colors, bg);
+$header-color: #FFB79A;
+
+// Title color
+$toolbar-md-title-text-color: color($colors, head);
+$toolbar-ios-title-text-color: color($colors, head);
+$toolbar-wp-title-text-color: color($colors, head);
+
+// Toolbar
+$toolbar-background: #FF530D;
+
+// Cards
+// softening the edges:
+$card-md-border-radius: 5px;
+$card-ios-border-radius: 5px;
+$card-wp-border-radius: 5px;
+// bg
+$card-ios-background-color: #FFFFFF;
+$card-md-background-color: #FFFFFF;
+$card-wp-background-color: #FFFFFF;
 
 // App iOS Variables
 // --------------------------------------------------
