@@ -1,7 +1,7 @@
 # TRAUST PROJECT
 This project has been created for the Hackathon UTC 2017.
 
-Traust aims to help drivers gain trust in semi-autonomous cars so they can *actually* let go of the steering wheel. 
+Traust aims at helping drivers to build trust with semi-autonomous cars so that they would *actually* let go the steering wheel and let the vehicule drive itself. The main idea is to let the driver know whenever the car detects a threat through a subtle vibration of the steering wheel and a ride recap.
 
 The code available on this repo is the mobile app (with mock data) that keeps track of your drives (distance, incidents...) 
 
